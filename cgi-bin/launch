@@ -1,0 +1,6 @@
+#!/bin/sh
+echo "Content-Type: text/html"
+echo ""
+echo "<html><head><title>Rocket Launcher - Launching</title></head><body>"
+echo "This would end up launching the rocket and reporting success"
+echo "</body></html>"

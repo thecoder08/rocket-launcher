@@ -1,0 +1,8 @@
+#!/bin/sh
+echo 13 > /sys/class/gpio/export
+echo 0 > /sys/class/gpio/gpio13/value
+echo "Content-Type: text/html"
+echo ""
+echo "<html><head><title>Rocket Launcher - Test $RESULT</title></head><body>"
+echo "This would end up testing continuity and reporting results"
+echo "</body></html>"
