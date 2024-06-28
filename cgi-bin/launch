@@ -1,6 +1,13 @@
 #!/bin/sh
+echo 13 > /sys/class/gpio/export
+sleep 0.1
+echo out > /sys/class/gpio/gpio13/direction
+echo 0 > /sys/class/gpio/gpio13/value
+sleep 3
+echo 1 > /sys/class/gpio/gpio13/value
+echo 13 > /sys/class/gpio/unexport
 echo "Content-Type: text/html"
 echo ""
 echo "<html><head><title>Rocket Launcher - Launching</title></head><body>"
-echo "This would end up launching the rocket and reporting success"
+echo "Successfully attempted a launch."
 echo "</body></html>"
