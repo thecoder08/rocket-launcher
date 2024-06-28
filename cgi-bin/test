@@ -1,6 +1,10 @@
 #!/bin/sh
 echo 13 > /sys/class/gpio/export
+echo 20 > /sys/class/gpio/export
+echo out > /sys/class/gpio/gpio13/direction
+echo in > /sys/class/gpio/gpio20/direction
 echo 0 > /sys/class/gpio/gpio13/value
+RESULT = cat /sys/class/gpio/gpio20/value
 echo "Content-Type: text/html"
 echo ""
 echo "<html><head><title>Rocket Launcher - Test $RESULT</title></head><body>"
