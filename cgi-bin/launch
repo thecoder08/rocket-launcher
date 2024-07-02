@@ -9,5 +9,6 @@ echo 13 > /sys/class/gpio/unexport
 echo "Content-Type: text/html"
 echo ""
 echo "<html><head><title>Rocket Launcher - Launching</title></head><body>"
-echo "Successfully attempted a launch."
+echo "<p>Successfully attempted a launch.</p>"
+echo "</p><p><a href="/">Back</a></p>"
 echo "</body></html>"
